@@ -36,7 +36,9 @@
         {% endif %}
       </div>
       <div class="timeline-content">
-        <p class="heading">{{ page.date }}</p>
+
+        <p class="heading">{{ page.date | date(format="%Y-%b") }}</p> <!-- %b -> "Jul" -->
+        <!--p class="heading">{{ page.date | date(format="%Y-%m") }}</p--> <!-- %b -> "07" -->
         <p><strong>{{ page.title }}</strong></p>
       </div>
     </div>
