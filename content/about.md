@@ -62,11 +62,11 @@ Previously I served as a Research Scientist at I2R, A\*STAR in Singapore, a Soft
 
 #### Perspective students
 
-I am open to supervise thesis project for bachelor and master students within TUM. The project topics includes but not limited to:
+I am open to supervise thesis project for bachelor and master students within TUM (available for Winter semester 2025 and onwards). The project topics includes but not limited to:
 
-* Security of Large Language Models
+* Security of Large Language Models and their applications
 * Privacy Preservation & Compliance of Large Language Models
-* Security & Privacy Assessment of Mobile Apps
+* Security & Privacy Assessment of Mobile Apps & Systems
 * Understanding Deployment Tools for LLMs in Real-World Applications
 
 Interested applicant can directly write to [application(at)seai.cit.tum.de](mailto:application@seai.cit.tum.de). Instructions and more details about the thesis opportunities within the chair of SE & AI can be found [here](https://www.cs.cit.tum.de/en/seai/open-theses/).
