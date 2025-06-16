@@ -3,5 +3,5 @@ title = "I will give a presentation about AI software security at transformativ 
 date = 2025-06-06
 
 [extra]
-category = "others"
+category = "talk"
 +++
