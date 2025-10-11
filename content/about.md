@@ -56,17 +56,18 @@ transparent = false
 # Your own data
 [extra]
 +++
-I am a Postdoctoral Researcher at the Technical University of Munich (TUM), Germany. My research is affiliated with the Chair of Software Engineering & AI at the Heilbronn campus. My research interests include software engineering, trustworthy AI, and AI for society. I obtained my PhD degree at the School of Computing, National University of Singapore (NUS), under the joint supervision of Professor Dong Jin Song at NUS and Dr. Teo Sin Gee at Infocomm Research (I2R), Agency for Science, Technology and Research (A\*STAR). 
+I am an Assistant Professor at the School of Computer Science, University College Dublin. My research interests include software engineering, cybersecurity, and trustworthy AI. I received my PhD degree at the School of Computing, National University of Singapore (NUS), under the joint supervision of Professor Dong Jin Song at NUS and Dr. Teo Sin Gee at Infocomm Research (I2R), Agency for Science, Technology and Research (A\*STAR). I was the recipient of NUS School of Computing Teaching Fellowship (2023) and A\*STAR Computing and Information Science (ACIS) Scholarship. 
 
-Previously I served as a Research Scientist at I2R, A\*STAR in Singapore, a Software Analyst at NCS (a member of the SingTel Group), and a Software Engineer at Gemalto (now part of Thales Group). Prior to my research career, I worked in diverse product teams such as CAD software development, mobile banking solutions, and e-government platform. My previous research covers security analysis on mobile applications and blockchain. I received my Bachelor (Hons.) of Engineering degree in Computer Science at the School of Computer Science and Engineering, Nanyang Technological University (NTU), Singapore, and my Master of Computing degree in Infocomm Security at the School of Computing, National University of Singapore (NUS).
+Previously I served as a Postdoc Researcher at Technical University of Munich (TUM), a Research Scientist at I2R, A\*STAR in Singapore, a Software Analyst at NCS (a member of the SingTel Group), and a Software Engineer at Gemalto (now part of Thales Group). Prior to my research career, I worked in diverse product teams such as CAD software development, mobile banking solutions, and e-government platform. My previous research covers security analysis on mobile applications and blockchain. I received my Bachelor (Hons.) of Engineering degree in Computer Science at the School of Computer Science and Engineering, Nanyang Technological University (NTU), Singapore, and my Master of Computing degree in Infocomm Security at the School of Computing, National University of Singapore (NUS).
 
 #### Perspective students
 
-I am open to supervise thesis project for bachelor and master students within TUM (available for Winter semester 2025 and onwards). The project topics includes but not limited to:
+I have open positions for PhD students who are with relevant background and research interests. I am also open to supervise thesis project at both UCD (Ireland) and TUM (under co-supervision mode). Interested applicant can directly write to [me](mailto:huasong.meng@gmail.com). The project topics includes but not limited to:
 
-* Security of Large Language Models and their applications
-* Privacy Preservation & Compliance of Large Language Models
-* Security & Privacy Assessment of Mobile Apps & Systems
-* Understanding Deployment Tools for LLMs in Real-World Applications
+* Security & privacy of GenAI (e.g., LLMs) and their applications 
+* Privacy preservation & compliance of LLMs
+* Security & privacy assessment of mobile apps & systems
+* Investigating development frameworks for LLMs in real-world applications
+* Software engineering for AI (SE4AI)
+* AI for software engineering (AI4SE)
 
-Interested applicant can directly write to [application(at)seai.cit.tum.de](mailto:application@seai.cit.tum.de). Instructions and more details about the thesis opportunities within the chair of SE & AI can be found [here](https://www.cs.cit.tum.de/en/seai/open-theses/).

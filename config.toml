@@ -20,10 +20,10 @@ author = "Mark Huasong Meng"
 author_chinese = "/img/chn-chars.png"
 
 # Role of the author
-role = "Postdoctoral Researcher"
+role = "Assistant Professor"
 
 # Organizations of the author
-organizations = [ { name = "School of Computation, Information and Technology (CIT), Technical University of Munich, Germany" } ]
+organizations = [ { name = "School of Computer Science, University College Dublin (UCD), Ireland" } ]
 
 # Protrait photo
 image = "/img/profile.jpg"
@@ -37,7 +37,7 @@ social_icons = [
 {icon="ai-google-scholar", icon_pack="ai", link="https://scholar.google.com.sg/citations?user=Lcjd0zwAAAAJ"},
 {icon="fa-github", icon_pack="fa-brands", link="https://github.com/mark-h-meng" },
 {icon="fa-orcid", icon_pack="fa-brands", link="https://orcid.org/0000-0003-1039-2151" },
-{icon="", icon_pack="", link="https://www.cs.cit.tum.de/en/seai/team/mark-huasong-meng/", src="/img/tum_logo_gs.png"},
+# {icon="", icon_pack="", link="https://www.cs.cit.tum.de/en/seai/team/mark-huasong-meng/", src="/img/tum_logo_gs.png"},
 ]
 
 # Your interests
@@ -57,7 +57,8 @@ education = [
 
 # Your work experience
 career = [
-{employer = "Technical University of Munich, Germany", year = "2024-Present", title = "Postdoctoral Researcher"},
+{employer = "University College Dublin, Ireland", year = "2025 - Present", title = "Assistant Professor"},
+{employer = "Technical University of Munich, Germany", year = "2024-2025", title = "Postdoctoral Researcher"},
 {employer = "Agency for Science, Technology and Research (A*STAR), Singapore", year = "2016-2024", title = "Senior Research Engineer / Research Scientist"},
 {employer = "NCS Pte Ltd, Singapore", year = "2016", title = "Software Analyst"},
 {employer = "Gemalto (Thales) Pte Ltd, Singapore", year = "2014-2015", title = "Software Engineer"},
