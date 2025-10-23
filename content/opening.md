@@ -56,12 +56,14 @@ transparent = false
 # Your own data
 [extra]
 +++
-I have open positions for PhD students at UCD (Ireland) who are with relevant background and research interests. I am also open to supervise thesis project at both UCD (Ireland) and TUM (under co-supervision mode). Interested applicant can directly write to [me](mailto:huasong.meng@gmail.com). The project topics includes but not limited to:
+I have open positions for PhD students at UCD (Ireland) who are with relevant background and research interests. PhD positions will be fully funded and hired as full-time staff by the university. Overseas students and visitors through their host country funding schemes (e.g., CSC from China, ARAP from Singapore) are also welcomed.
 
-* Security & privacy of GenAI (e.g., LLMs) and their applications 
+I am also open to supervise thesis project at both UCD (Ireland) and TUM (under co-supervision mode). Interested applicant can directly write to [me](mailto:huasong.meng@gmail.com). The project topics includes but not limited to:
+
+* Automatic bug diagnosis of open-source LLM deployment tools (e.g., Ollama, Llama.cpp, etc.)
+* Security & privacy of GenAI (e.g., LLMs) and their applications (e.g., AI-based software, RAG, etc.)
 * Privacy preservation & compliance of LLMs
 * Security & privacy assessment of mobile apps & systems
 * Investigating development frameworks for LLMs in real-world applications
-* Software engineering for AI (SE4AI)
-* AI for software engineering (AI4SE)
+* Diverse topics under the theme "Software engineering for AI (SE4AI)" and "AI for software engineering (AI4SE)"
 
