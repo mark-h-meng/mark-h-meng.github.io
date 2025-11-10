@@ -56,7 +56,9 @@ transparent = false
 # Your own data
 [extra]
 +++
-I am an Assistant Professor at the School of Computer Science, University College Dublin. My research interests include software engineering, cybersecurity, and trustworthy AI. I received my PhD degree at the School of Computing, National University of Singapore (NUS), under the joint supervision of Professor Dong Jin Song at NUS and Dr. Teo Sin Gee at Institute for Infocomm Research (I2R), Agency for Science, Technology and Research (A\*STAR). I was the recipient of NUS School of Computing Teaching Fellowship (2023) and A\*STAR Computing and Information Science (ACIS) Scholarship. 
+I am an Assistant Professor at the School of Computer Science, University College Dublin (UCD), Ireland. My research interests include software engineering, cybersecurity, and trustworthy AI. 
+
+I received my PhD degree at the School of Computing, National University of Singapore (NUS), under the joint supervision of Professor Dong Jin Song at NUS and Dr. Teo Sin Gee at Institute for Infocomm Research (I2R), Agency for Science, Technology and Research (A\*STAR). I was the recipient of NUS School of Computing Teaching Fellowship (2023) and A\*STAR Computing and Information Science (ACIS) Scholarship. 
 
 Previously I served as a Postdoc Researcher at Technical University of Munich (TUM), a Research Scientist at I2R, A\*STAR in Singapore, a Software Analyst at NCS (a member of the SingTel Group), and a Software Engineer at Gemalto (now part of Thales Group). Prior to my research career, I worked in diverse product teams such as CAD software development, mobile banking solutions, and e-government platform. My previous research covers security analysis on mobile applications and blockchain. I received my Bachelor (Hons.) of Engineering degree in Computer Science at the School of Computer Science and Engineering, Nanyang Technological University (NTU), Singapore, and my Master of Computing degree in Infocomm Security at the School of Computing, National University of Singapore (NUS).
 
