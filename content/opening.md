@@ -56,9 +56,9 @@ transparent = false
 # Your own data
 [extra]
 +++
-I have open positions for PhD students at UCD (Ireland) who are with relevant background and research interests. PhD positions will be fully funded and hired as full-time staff by the university. Overseas students and visitors through their host country funding schemes (e.g., CSC from China, ARAP from Singapore) are also welcomed.
+I am open for PhD supervision. Overseas students and visitors through their host country funding schemes (e.g., CSC from China, ARAP from Singapore) are welcomed.
 
-I am also open to supervise thesis project at both UCD (Ireland) and TUM (under co-supervision mode). Interested applicant can directly write to [me](mailto:huasong.meng@gmail.com). The project topics includes but not limited to:
+I am also open to supervise thesis project at both UCD (Ireland) and TUM (under co-supervision mode). Interested applicant can directly write to [me](mailto:mark.meng@ucd.ie). The project topics includes but not limited to:
 
 * Automatic bug diagnosis of open-source LLM deployment tools (e.g., Ollama, Llama.cpp, etc.)
 * Security & privacy of GenAI (e.g., LLMs) and their applications (e.g., AI-based software, RAG, etc.)
