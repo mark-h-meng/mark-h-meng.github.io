@@ -56,7 +56,7 @@ transparent = false
 # Your own data
 [extra]
 +++
-I am an Assistant Professor at the School of Computer Science, University College Dublin (UCD), Ireland. My research interests include software engineering, cybersecurity, and trustworthy AI. 
+I am an incoming Assistant Professor at the School of Computer Science, University College Dublin (UCD), Ireland. My research interests include software engineering, cybersecurity, and trustworthy AI. 
 
 I received my PhD degree from the School of Computing, National University of Singapore (NUS), under the joint supervision of Professor Dong Jin Song at NUS and Dr. Teo Sin Gee at the Institute for Infocomm Research (I2R), Agency for Science, Technology and Research (A\*STAR). I was the recipient of the NUS School of Computing Teaching Fellowship (2023) and the A\*STAR Computing and Information Science (ACIS) Scholarship. 
 
