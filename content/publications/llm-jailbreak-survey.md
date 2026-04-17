@@ -5,4 +5,5 @@ date = 2026-03-30
 [extra]
 author = "Ruikang Zhou, Changsheng Sun, Mark Huasong Meng"
 target = "Findings of the Association for Computational Linguistics (ACL Findings), 2026"
+pdf = "attachments/zhou2026survey.pdf"
 +++
