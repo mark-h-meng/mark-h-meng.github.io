@@ -1,8 +1,16 @@
 <nav class="navbar is-fixed-top is-personal-grey" role="navigation" aria-label="main navigation">
 
   <div class="navbar-brand">
+    <style>
+      @media screen and (max-width: 370px) {
+        #navbar-logo {
+          max-height: 1.5rem !important;
+          padding-left: 0.5rem !important;
+        }
+      }
+    </style>
     <a class="navbar-item" href="/" style="padding: 0;">
-      <img src="/img/title.png" alt="Mark H. Meng" style="max-height:2.25rem; padding: 0rem 0.5rem 0rem 2rem;">
+      <img id="navbar-logo" src="/img/title.png" alt="Mark H. Meng" style="max-height:2.25rem; padding: 0rem 0.5rem 0rem 1rem;">
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">

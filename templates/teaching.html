@@ -5,11 +5,11 @@
 <section class="section container">
 
   <div style="position: relative; margin-bottom: 1.5rem;">
-    <h3 id="page-header" class="title is-3">Teaching</h3>
+    <h3 id="page-header" class="title is-3 is-size-4-mobile" style="max-width: calc(100% - 120px);">Teaching</h3>
     <hr id="header-divider" style="margin-bottom: 0;">
     <!-- Change the src to your actual image path -->
     <img id="floating-profile-pic" src="/img/profile_alpha.png" alt="Floating Profile"
-      style="position: absolute; right: 2rem; bottom: 0; height: 150px; z-index: 999;">
+      style="position: absolute; right: 0.5rem; bottom: 0; height: 130px; z-index: 999;">
   </div>
 
   {% for page in section.pages %}
@@ -18,19 +18,19 @@
       <p class="title is-4">
         {{ page.title }}
       </p>
-      
+
       <p class="subtitle is-5" style="color: #000000;"><strong>
-        {{ page.extra.term }}</br>{{ page.extra.school}}
-      </strong></p>
+          {{ page.extra.term }}</br>{{ page.extra.school}}
+        </strong></p>
 
       <p class="is-6" style="padding-bottom: 1rem;">
         <strong>{{ page.extra.role}}</strong>, {{ page.extra.duty}}
       </p>
-      
+
       {% if page.extra.highlight %}
       <p class="is-6"><strong>
-        {{ page.extra.highlight}}
-      </strong></p>
+          {{ page.extra.highlight}}
+        </strong></p>
       {% endif %}
     </div>
     {% if page.extra.extra %}
@@ -60,12 +60,12 @@
       document.getElementById('page-header'),
       document.getElementById('header-divider')
     ].filter(el => el !== null); // Only keep elements that actually exist
-    
+
     // Add smooth transition to all elements
     fadeElements.forEach(el => {
       el.style.transition = 'opacity 0.3s ease-in-out';
     });
-    
+
     window.addEventListener('scroll', () => {
       // Fade elements out when scrolled past 30 pixels
       if (window.scrollY > 30) {
