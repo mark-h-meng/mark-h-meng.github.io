@@ -1,5 +1,5 @@
 +++
-title = "Trustworthy AI & Paoding-DL: an Open-sourced Python Package for Robustness Preserving Pre-trained ML Model Optimization"
+title = "Trustworthy AI & Paoding-DL: an Open-Sourced Python Package for Robustness Preserving Pre-Trained ML Model Optimization"
 date = 2022-09-01
 
 [extra]

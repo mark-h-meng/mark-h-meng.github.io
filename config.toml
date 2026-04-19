@@ -19,10 +19,12 @@ author = "Mark Huasong Meng"
 author_chinese = "/img/chn-chars.png"
 
 # Role of the author
-role = "Assistant Professor"
+#role = "Assistant Professor"
+role = "Postdoctoral Researcher"
 
 # Organizations of the author
-organizations = [ { name = "School of Computer Science, University College Dublin (UCD), Ireland" } ]
+#organizations = [ { name = "School of Computer Science, University College Dublin (UCD), Ireland" } ]
+organizations = [ { name = "Technical University of Munich, Germany" } ]
 
 # Protrait photo
 image = "/img/profile.jpg"
