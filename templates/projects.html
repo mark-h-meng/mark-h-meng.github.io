@@ -2,99 +2,85 @@
 
 {% block content %}
 
-<section class="section container px-1">
+<section class="section container">
 
-
-  <h3 class="title is-3">Selected Research Projects</h3>
-  <hr>
+  <div style="position: relative; margin-bottom: 1.5rem;">
+    <h3 id="page-header" class="title is-3">Selected Research Projects</h3>
+    <hr id="header-divider" style="margin-bottom: 0;">
+    <!-- Change the src to your actual image path -->
+    <img id="floating-profile-pic" src="/img/profile_alpha.png" alt="Floating Profile"
+      style="position: absolute; right: 2rem; bottom: 0; height: 150px; z-index: 999;">
+  </div>
 
 
   <div class="columns is-desktop is-multiline">
 
-  {% for page in section.pages %}
+    {% for page in section.pages %}
 
-  <div class="column is-half-desktop">
-  <div class="card mt-2">
+    <div class="column is-half-desktop">
+      <div class="card mt-2">
 
-    <div class="card-content">
-      <p class="title is-4">
-        {{ page.title }}
-      </p>
-      <img class="cardcover" src="{{ page.extra.cover }}" alt="Currently the cover image is not available">
+        <div class="card-content">
+          <p class="title is-4">
+            {{ page.title }}
+          </p>
+          <img class="cardcover" src="{{ page.extra.cover }}" alt="Currently the cover image is not available">
 
-      <p class="subtitle is-6 py-1" style="color: #000000;">
-        {{ page.extra.description }}
-      </p>
+          <p class="subtitle is-6 py-1" style="color: #000000;">
+            {{ page.extra.description }}
+          </p>
+        </div>
+
+
+        {% if page.extra.highlight %}
+        <footer class="card-footer">
+          {% for highlight in page.extra.highlight %}
+          <p class="card-footer-item">
+            <span>
+              {{ highlight.text }}<a href="{{ highlight.link }}" target="_blank">{{ highlight.ref }}</a>{{
+              highlight.text_after }}
+            </span>
+          </p>
+          {% endfor %}
+        </footer>
+        {% endif %}
+      </div>
+
     </div>
-  
-    
-    {% if page.extra.highlight %}
-    <footer class="card-footer">
-      {% for highlight in page.extra.highlight %}
-      <p class="card-footer-item">
-        <span>
-          {{ highlight.text }}<a href="{{ highlight.link }}" target="_blank">{{ highlight.ref }}</a>{{ highlight.text_after }}
-        </span>
-      </p>
-      {% endfor %}
-    </footer>
-    {% endif %}
+    {% endfor %}
   </div>
 
-</div>
-  {% endfor %}  
-  </div>
-
-  <!--div class="card mx-5 mt-6">
-    <div class="card-content">
-      <p class="title is-4">
-        SKIPPER: SKIll Privacy Policy cleanER
-      </p>
-      <p class="subtitle is-6">
-        Fuman Xie
-      </p>
-    </div>
-    <footer class="card-footer">
-      <p class="card-footer-item">
-        <span>
-          View the <a>paper</a>
-        </span>
-      </p>
-      <p class="card-footer-item">
-        <span>
-          Checkout the <a>code</a>
-        </span>
-      </p>
-    </footer>
-  </div>
-
-  <div class="card mx-5 mt-6">
-    <div class="card-content">
-      <p class="title is-4">
-        U2-I2: An one-stop solution to explore user unresettable identifiers (UUIs) leakage on your Android smartphone.
-      </p>
-      <p class="subtitle is-6">
-        Mark Meng, Qing Zhang, Guangshuai Xia, Yuwei Zheng, Yanjun Zhang, Guangdong Bai, Zhi Liu, Sin Gee Teo, Jin Song Dong
-      </p>
-    </div>
-    <footer class="card-footer">
-      <p class="card-footer-item">
-        <span>
-          Visit the <a href="https://uq-trust-lab.github.io/u2i2/">website</a>
-        </span>
-      </p>
-      <p class="card-footer-item">
-        <span>
-          View the <a href="https://uq-trust-lab.github.io/u2i2/docs/public/paper/u2i2_ndss.pdf">paper</a>
-        </span>
-      </p>
-      <p class="card-footer-item">
-        <span>
-          Checkout the <a href="https://uq-trust-lab.github.io/u2i2/toolkit/">code</a>
-        </span>
-      </p>
-    </footer>
-  </div-->
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select the elements we want to fade out
+    const fadeElements = [
+      document.getElementById('floating-profile-pic'),
+      document.getElementById('page-header'),
+      document.getElementById('header-divider')
+    ].filter(el => el !== null); // Only keep elements that actually exist
+
+    // Add smooth transition to all elements
+    fadeElements.forEach(el => {
+      el.style.transition = 'opacity 0.3s ease-in-out';
+    });
+
+    window.addEventListener('scroll', () => {
+      // Fade elements out when scrolled past 30 pixels
+      if (window.scrollY > 30) {
+        fadeElements.forEach(el => {
+          el.style.opacity = '0';
+          el.style.pointerEvents = 'none';
+        });
+      } else {
+        fadeElements.forEach(el => {
+          el.style.opacity = '1';
+          el.style.pointerEvents = 'auto';
+        });
+      }
+    });
+  });
+</script>
 
 {% endblock content %}

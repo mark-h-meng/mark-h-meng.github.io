@@ -70,6 +70,16 @@
           const $target = document.getElementById(target);
           el.classList.toggle('is-active');
           $target.classList.toggle('is-active');
+          
+          // Toggle floating profile picture if it exists on the page
+          const profilePic = document.getElementById('floating-profile-pic');
+          if (profilePic) {
+            if (el.classList.contains('is-active')) {
+              profilePic.style.display = 'none';
+            } else {
+              profilePic.style.display = 'block';
+            }
+          }
         });
       });
 
