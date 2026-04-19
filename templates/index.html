@@ -9,7 +9,8 @@
                         <div class="box has-text-centered">
 
                             <figure class="image is-192x192 is-centered is-inline-block">
-                                <img src="{{ config.extra.image }}" alt="" style="width:200px;height:200px;margin-bottom: 30px;">
+                                <img src="{{ config.extra.image }}" alt=""
+                                    style="width:200px;height:200px;margin-bottom: 30px;">
                             </figure>
 
                             <div class="is-size-4"><strong>{{ config.extra.author }}</strong></div>
@@ -20,12 +21,12 @@
                             {% endfor %}
                             <div class="content">
                                 {% for icon in config.extra.social_icons %}
-                                {% if icon.icon != "" %}      
-                                <a class="icon is-large fa-xl" href="{{icon.link | safe }}" target=”_blank” >
+                                {% if icon.icon != "" %}
+                                <a class="icon is-large fa-xl" href="{{icon.link | safe }}" target=”_blank”>
                                     <i class="{{icon.icon_pack}} {{ icon.icon }}" style="color:#999999;"></i>
                                 </a>
                                 {% else %}
-                                <a class="icon is-large fa-xl" href="{{icon.link | safe }}" target=”_blank” >
+                                <a class="icon is-large fa-xl" href="{{icon.link | safe }}" target=”_blank”>
                                     <img src={{icon.src}} style="height:0.rem;width:2rem;display:block;"></img>
                                 </a>
                                 {% endif %}
@@ -42,7 +43,6 @@
                             {% endif %}
                             {% endfor %}
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -59,6 +59,11 @@
                         {{ page.content | safe }}
                         {% endif %}
                         {% endfor %}
+
+                        <h4 class="mt-5">Helpful Links</h4>
+                        <ul>
+                            <li><a href="/tunnel-client/">Client (SSH Tunnel) Setup</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
