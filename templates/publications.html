@@ -4,8 +4,14 @@
 
 
 <section class="section container">
-  <h3 class="title is-3">Publications</h3>
-  <hr>
+
+  <div style="position: relative; margin-bottom: 1.5rem;">
+    <h3 id="page-header" class="title is-3">Publications</h3>
+    <hr id="header-divider" style="margin-bottom: 0;">
+    <!-- Change the src to your actual image path -->
+    <img id="floating-profile-pic" src="/img/profile_alpha.png" alt="Floating Profile"
+      style="position: absolute; right: 2rem; bottom: 0; height: 150px; z-index: 999;">
+  </div>
 
   {% set hide_earlier_year = false %}
   {% set my_var = 1 %}
@@ -79,5 +85,36 @@
   
   {% endfor %}
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select the elements we want to fade out
+    const fadeElements = [
+      document.getElementById('floating-profile-pic'),
+      document.getElementById('page-header'),
+      document.getElementById('header-divider')
+    ].filter(el => el !== null); // Only keep elements that actually exist
+    
+    // Add smooth transition to all elements
+    fadeElements.forEach(el => {
+      el.style.transition = 'opacity 0.3s ease-in-out';
+    });
+    
+    window.addEventListener('scroll', () => {
+      // Fade elements out when scrolled past 30 pixels
+      if (window.scrollY > 30) {
+        fadeElements.forEach(el => {
+          el.style.opacity = '0';
+          el.style.pointerEvents = 'none';
+        });
+      } else {
+        fadeElements.forEach(el => {
+          el.style.opacity = '1';
+          el.style.pointerEvents = 'auto';
+        });
+      }
+    });
+  });
+</script>
 
 {% endblock content %}
