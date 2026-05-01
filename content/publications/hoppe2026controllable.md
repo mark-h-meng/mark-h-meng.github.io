@@ -1,6 +1,6 @@
 +++
 title = "Controllable and Explainable Personality Sliders for LLMs at Inference Time"
-date = 2026-03-30
+date = 2026-04-30
 
 [extra]
 author = "Florian Hoppe, David Khachaturov, Robert D. Mullins, Mark Huasong Meng"
