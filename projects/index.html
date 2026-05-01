@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/aead03389f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+
+	<link rel="shortcut icon" type="image/png" href="https:&#x2F;&#x2F;mark-h-meng.github.io/img/favicon/favicon-32x32.png" size="32x32"/>
+	<link rel="shortcut icon" type="image/png" href="https:&#x2F;&#x2F;mark-h-meng.github.io/img/favicon/favicon-16x16.png" size="16x16"/>
+	<link rel="shortcut icon" type="image/png" href="https:&#x2F;&#x2F;mark-h-meng.github.io/img/favicon/favicon-96x96.png" size="96x96"/>
+  <style>
+    .award-hover:hover {
+      color:#ffb900;
+      display: inline-block;
+    }
+  </style>
+  <title>Mark Meng's Home Page</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="has-navbar-fixed-top" style="position: relative; min-height: 100vh;">
+  <nav class="navbar is-fixed-top is-personal-grey" role="navigation" aria-label="main navigation">
+
+  <div class="navbar-brand">
+    <style>
+      @media screen and (max-width: 370px) {
+        #navbar-logo {
+          max-height: 1.5rem !important;
+          padding-left: 0.5rem !important;
+        }
+      }
+    </style>
+    <a class="navbar-item" href="/" style="padding: 0;">
+      <img id="navbar-logo" src="/img/title.png" alt="Mark H. Meng" style="max-height:2.25rem; padding: 0rem 0.5rem 0rem 1rem;">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/news/">
+        <span class="icon-text">
+          <!--span class="icon">
+            <i class="fa-solid fa-calendar-day"></i>
+          </span-->
+          <span><strong>News</strong></span>
+      </a>
+
+      <a class="navbar-item" href="/publications/">
+        <span class="icon-text">
+          <!--span class="icon">
+            <i class="fa-solid fa-book-bookmark"></i>
+          </span-->
+          <span><strong>Publications</strong></span>
+        </span>
+      </a>
+
+      <a class="navbar-item" href="/projects/">
+        <span class="icon-text">
+          <!--span class="icon">
+            <i class="fa-solid fa-list-check"></i>
+          </span-->
+          <span><strong>Projects</strong></span>
+        </span>
+      </a>
+
+      <a class="navbar-item" href="/teaching/">
+        <span class="icon-text">
+          <!--span class="icon">
+            <i class="fa-solid fa-list-check"></i>
+          </span-->
+          <span><strong>Teaching</strong></span>
+        </span>
+      </a>
+
+      <!--a class="navbar-item" href="/cv/">
+        <span class="icon-text"-->
+          <!--span class="icon">
+            <i class="fa-solid fa-list-check"></i>
+          </span-->
+          <!--span><strong>CV</strong> <i class="fa-solid fa-file"></i></span>
+        </span>
+      </a-->
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+          
+          // Toggle floating profile picture if it exists on the page
+          const profilePic = document.getElementById('floating-profile-pic');
+          if (profilePic) {
+            if (el.classList.contains('is-active')) {
+              profilePic.style.display = 'none';
+            } else {
+              profilePic.style.display = 'block';
+            }
+          }
+        });
+      });
+
+    });
+  </script>
+
+</nav>
+
+  
+
+<section class="section container">
+
+  <div style="position: relative; margin-bottom: 1.5rem;">
+    <h3 id="page-header" class="title is-3 is-size-4-mobile" style="max-width: calc(100% - 120px);">Selected Research
+      Projects</h3>
+    <hr id="header-divider" style="margin-bottom: 0;">
+    <!-- Change the src to your actual image path -->
+    <img id="floating-profile-pic" src="/img/profile_alpha.png" alt="Floating Profile"
+      style="position: absolute; right: 0.5rem; bottom: 0; height: 130px; z-index: 999;">
+  </div>
+
+  <p class="content is-size-6" style="margin-bottom: 2.5rem; max-width: 900px;">
+    My research centers on <b>advancing the security, reliability, and trustworthiness of the emerging AI and Large
+      Language Model (LLM) ecosystem</b>. Moving beyond a model-centric perspective, I investigate risks and challenges
+    across the full stack—from models to
+    AI-powered apps and their surrounding ecosystems.
+  <div class="columns is-desktop is-multiline">
+
+    
+
+    <div class="column is-half-desktop">
+      <div class="card mt-2">
+
+        <div class="card-content">
+          <p class="title is-4">
+            Safety-Aligned LLMs
+          </p>
+          <img class="cardcover" src="&#x2F;projects&#x2F;safety-aligned-llms.png" alt="Currently the cover image is not available">
+
+          <p class="subtitle is-6 py-1" style="color: #000000;">
+            We study the fundamental limits of safety alignment in modern LLMs, with a particular focus on jailbreak attacks. We first reviewed all the existing study and accordingly proposed a vulnerability-centric framework to systematically understand &quot;why alignment fails&quot;. Building on this line of work, we are exploring new directions including representation-level control (e.g., steering vectors) and the security of LLM-based agents, aiming to develop more principled and robust approaches to alignment.
+          </p>
+        </div>
+
+
+        
+        <footer class="card-footer">
+          
+          <p class="card-footer-item">
+            <span>
+              Read our recent <a href="..&#x2F;publications&#x2F;attachments&#x2F;zhou2026survey.pdf" target="_blank">survey</a> for LLM jailbreaks from a vulnerability-centric perspective published at ACL
+            </span>
+          </p>
+          
+        </footer>
+        
+      </div>
+
+    </div>
+    
+
+    <div class="column is-half-desktop">
+      <div class="card mt-2">
+
+        <div class="card-content">
+          <p class="title is-4">
+            Software Engineering for Large Language Models
+          </p>
+          <img class="cardcover" src="&#x2F;projects&#x2F;llm-sec.png" alt="Currently the cover image is not available">
+
+          <p class="subtitle is-6 py-1" style="color: #000000;">
+            A series of ongoing research that aims explore potential security and trustworthiness issues in large language models (LLMs) through the lens of software engineering. We focus on a wide range of issues including apps ecosystem security, glitch tokens, hallucinations, and etc. Our preliminary research has been accepted by ASE 2024 and WWW 2025, and won distinguished paper award.
+          </p>
+        </div>
+
+
+        
+        <footer class="card-footer">
+          
+          <p class="card-footer-item">
+            <span>
+              Read our <a href="..&#x2F;publications&#x2F;attachments&#x2F;yan2024investgating.pdf" target="_blank">paper</a> for LLM app ecosystem security assessment
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Read our <a href="..&#x2F;publications&#x2F;attachments&#x2F;yan2025understanding.pdf" target="_blank">paper</a> for the knowledge leakage issues of LLM apps
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Read our <a href="..&#x2F;publications&#x2F;attachments&#x2F;zhang2024glitchprober.pdf" target="_blank">paper</a> for glitch token discovery and repair
+            </span>
+          </p>
+          
+        </footer>
+        
+      </div>
+
+    </div>
+    
+
+    <div class="column is-half-desktop">
+      <div class="card mt-2">
+
+        <div class="card-content">
+          <p class="title is-4">
+            AI for Software Engineering
+          </p>
+          <img class="cardcover" src="&#x2F;projects&#x2F;ai4se.png" alt="Currently the cover image is not available">
+
+          <p class="subtitle is-6 py-1" style="color: #000000;">
+            A series of research that aims to leverage state-of-the-art AI advancement in solving software engineering problems, especially security and privacy issues in application ecosystems of different hardware platforms including mobile and smart home devices. This project is a collaboration with the UQ Trust Lab and ByteDance Security Lab.
+          </p>
+        </div>
+
+
+        
+        <footer class="card-footer">
+          
+          <p class="card-footer-item">
+            <span>
+              Read our <a href="..&#x2F;publications&#x2F;attachments&#x2F;yan2024exploring.pdf" target="_blank">paper</a> for privcy test generation
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Read our <a href="..&#x2F;publications&#x2F;attachments&#x2F;xie2024are.pdf" target="_blank">paper</a> for privacy disclosure evaluation
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Checkout the <a href="https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2409.10411" target="_blank">preprint</a> for Android SDK privacy.
+            </span>
+          </p>
+          
+        </footer>
+        
+      </div>
+
+    </div>
+    
+
+    <div class="column is-half-desktop">
+      <div class="card mt-2">
+
+        <div class="card-content">
+          <p class="title is-4">
+            U2-I2: UUI Investigator for Android Smartphones
+          </p>
+          <img class="cardcover" src="&#x2F;projects&#x2F;u2i2-cover.png" alt="Currently the cover image is not available">
+
+          <p class="subtitle is-6 py-1" style="color: #000000;">
+            An one-stop solution to explore user-unresettable identifiers (UUIs) leakage on your Android smartphone. This work is a collaboration with the UQ Trust Lab and ByteDance Security Lab.
+          </p>
+        </div>
+
+
+        
+        <footer class="card-footer">
+          
+          <p class="card-footer-item">
+            <span>
+              Visit the <a href="https:&#x2F;&#x2F;uq-trust-lab.github.io&#x2F;u2i2&#x2F;" target="_blank">website</a>
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Download the <a href="..&#x2F;publications&#x2F;attachments&#x2F;meng2023post.pdf" target="_blank">paper</a>
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Checkout the <a href="https:&#x2F;&#x2F;uq-trust-lab.github.io&#x2F;u2i2&#x2F;toolkit&#x2F;" target="_blank">code</a>
+            </span>
+          </p>
+          
+        </footer>
+        
+      </div>
+
+    </div>
+    
+
+    <div class="column is-half-desktop">
+      <div class="card mt-2">
+
+        <div class="card-content">
+          <p class="title is-4">
+            Trustworthy AI &amp; Paoding-DL: an Open-Sourced Python Package for Robustness Preserving Pre-Trained ML Model Optimization
+          </p>
+          <img class="cardcover" src="&#x2F;projects&#x2F;trustworthy-ai-cover.png" alt="Currently the cover image is not available">
+
+          <p class="subtitle is-6 py-1" style="color: #000000;">
+            A survey on adversarial robustness of deep neural network and several research studies on robustness-preserving neural network model optimization for both conventional centralized learning and multi-party federated learning.
+          </p>
+        </div>
+
+
+        
+        <footer class="card-footer">
+          
+          <p class="card-footer-item">
+            <span>
+              Download the <a href="..&#x2F;publications&#x2F;attachments&#x2F;meng2022survey.pdf" target="_blank">survey</a> paper
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Checkout the <a href="https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;paoding-dl&#x2F;" target="_blank">tool</a> of Paoding-DL
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Read the Paoding <a href="..&#x2F;publications&#x2F;attachments&#x2F;meng2023supervised.pdf" target="_blank">paper</a>
+            </span>
+          </p>
+          
+        </footer>
+        
+      </div>
+
+    </div>
+    
+
+    <div class="column is-half-desktop">
+      <div class="card mt-2">
+
+        <div class="card-content">
+          <p class="title is-4">
+            A Formal Approach towards Trustworthy LLMs against Character-Level Purterbations
+          </p>
+          <img class="cardcover" src="&#x2F;projects&#x2F;char-level-robustness-llms.png" alt="Currently the cover image is not available">
+
+          <p class="subtitle is-6 py-1" style="color: #000000;">
+            An exploration research to formally define the metrics of character-level perturbations that may impact the performance of mainstream large language models (LLMs), and an empirical study of the character-level robustness of LLMs. A tool named PdD is proposed and open-sourced by us. This work is a collaboration with the University of Queensland.
+          </p>
+        </div>
+
+
+        
+        <footer class="card-footer">
+          
+          <p class="card-footer-item">
+            <span>
+              Download the <a href="..&#x2F;publications&#x2F;attachments&#x2F;ma2023formalizing.pdf" target="_blank">paper</a>
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Checkout the <a href="https:&#x2F;&#x2F;github.com&#x2F;UQ-Trust-Lab&#x2F;PdD" target="_blank">tool</a> named PdD on GitHub
+            </span>
+          </p>
+          
+        </footer>
+        
+      </div>
+
+    </div>
+    
+
+    <div class="column is-half-desktop">
+      <div class="card mt-2">
+
+        <div class="card-content">
+          <p class="title is-4">
+            EagleEye: Forensic Analysis for Android Devices and Apps, Exploitation Study, and Priviledge Escalation
+          </p>
+          <img class="cardcover" src="&#x2F;projects&#x2F;eagleeye-cover.png" alt="Currently the cover image is not available">
+
+          <p class="subtitle is-6 py-1" style="color: #000000;">
+            A survey on Android exploits and research on Android APK transformation solution covering 8 different obfuscation techniques. This work is under the parent project Cybernite at I2R, A*STAR Singapore.
+          </p>
+        </div>
+
+
+        
+        <footer class="card-footer">
+          
+          <p class="card-footer-item">
+            <span>
+              Download the <a href="..&#x2F;publications&#x2F;attachments&#x2F;meng2018survey.pdf" target="_blank">survey</a> paper
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              Download the obfuscation <a href="..&#x2F;publications&#x2F;attachments&#x2F;zhang2018progressive.pdf" target="_blank">paper</a>
+            </span>
+          </p>
+          
+          <p class="card-footer-item">
+            <span>
+              <a href="..&#x2F;publications&#x2F;attachments&#x2F;meng2018analyzing.pdf" target="_blank">Paper</a> of privilege escalation
+            </span>
+          </p>
+          
+        </footer>
+        
+      </div>
+
+    </div>
+    
+  </div>
+
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select the elements we want to fade out
+    const fadeElements = [
+      document.getElementById('floating-profile-pic'),
+      document.getElementById('page-header'),
+      document.getElementById('header-divider')
+    ].filter(el => el !== null); // Only keep elements that actually exist
+
+    // Add smooth transition to all elements
+    fadeElements.forEach(el => {
+      el.style.transition = 'opacity 0.3s ease-in-out';
+    });
+
+    window.addEventListener('scroll', () => {
+      // Fade elements out when scrolled past 30 pixels
+      if (window.scrollY > 30) {
+        fadeElements.forEach(el => {
+          el.style.opacity = '0';
+          el.style.pointerEvents = 'none';
+        });
+      } else {
+        fadeElements.forEach(el => {
+          el.style.opacity = '1';
+          el.style.pointerEvents = 'auto';
+        });
+      }
+    });
+  });
+</script>
+
+
+
+  <footer class="footer" style="background-color:#202020">
+    <div class="content has-text-centered">
+    <!--div class="columns is-desktop"-->
+      <!-- div class="column is-10 is-offset-1" -->
+      <p style="color: #fafafa">
+        &copy; 
+        <script>document.write( new Date().getFullYear() );</script>
+        Mark Meng.<br>Powered by the academic theme for Zola using Bulma.
+      </p>
+      <!--/div-->
+    </div>
+  </footer>
+</body>
+
+</html>
