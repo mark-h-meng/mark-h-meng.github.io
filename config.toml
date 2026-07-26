@@ -27,7 +27,7 @@ organizations = [ { name = "School of Computer Science, University College Dubli
 #organizations = [ { name = "Technical University of Munich, Germany" } ]
 
 # Protrait photo
-image = "/img/profile_alpha.png"
+image = "/img/profile.png"
 
 # Whether the navbar should be screen wide or page wide
 wide_navbar = false
